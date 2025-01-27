@@ -6,6 +6,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import { Text } from 'react-native';
 
 export default function TabTwoScreen() {
   return (
@@ -24,14 +25,15 @@ export default function TabTwoScreen() {
       </ThemedView>
       <ThemedText>This app includes example code to help you get started.</ThemedText>
       <Collapsible title="File-based routing">
-        <ThemedText>
+        <ThemedText className='flex-1 flex-direction-row'>
           This app has two screens:{' '}
           <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
           <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
         </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+        <ThemedText className='flex-1 flex-direction-row text-red-500' style={{ color: 'red' }}>
+          The layout file in <ThemedText className='text-red-500' type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
+          sets up the tab navigator.sfafs
+          <Text className='text-red-500'>The layout file in <ThemedText className='text-red-500' type="defaultSemiBold">app/_layout.tsx</ThemedText>{' '}</Text>
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/router/introduction">
           <ThemedText type="link">Learn more</ThemedText>
