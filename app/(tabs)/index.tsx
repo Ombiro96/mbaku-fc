@@ -10,7 +10,7 @@ import { View, Text } from 'react-native';
 export default function HomeScreen() {
   return (
     <View className='flex-1 flex-direction-column text-right'>
-      <Text className='text-2xl text-blue-700'>Welcome to Gazelle Masters</Text>
+      <Text className='text-2xl text-primary'>Welcome to Gazelle Masters</Text>
       <ThemedView>
         {/* <ThemedText type="title">Welcome!</ThemedText> */}
         <HelloWave />
